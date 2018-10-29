@@ -1,0 +1,142 @@
+.conteiner {
+    height: 50vh;
+    width: 50%;
+    position: relative;
+    background-color: #abb8c3;
+}
+
+.conteiner,
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: #fefefe;
+    color: #333;
+    border: 5px solid #333;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 50px;
+    box-shadow: 0 10px 30px #333;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+}
+
+.btn:active{
+    transform: translateY(3px);
+}
+
+.popup {
+    height: 50%;
+    width: 50%;
+   
+    position: fixed;
+    margin-top: 9px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    transition: all 0.3s;
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup_content{
+    background-color: #fefefe;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    font-size: 30px;
+}
+.popup_close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 50px;
+}
+
+
+
+.box{
+    height: 200px;
+    top:50%;
+    left: 50%;
+    width: 200px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    background-image: url(SAM_0047.JPG);
+    background-size: cover;
+    margin: 80px;
+}
+.bounce{
+    transition: 0.5s cubic-bezier(.2,1.2,.5,1.1);
+}
+.bounce:hover{
+    transform: scale(1.5,1.5);
+}
+
+
+
+.box1{
+    height: 200px;
+    top:50%;
+    left: 50%;
+    width: 200px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    background-image: url(Screen%20Shot%202018-02-27%20at%2012.49.29%20AM.png);
+    background-size: cover;
+    margin: 80px;
+
+}
+.bounce1{
+    transition: 0.5s cubic-bezier(.2,1.2,.5,1.1);
+}
+.bounce1:hover{
+    transform: scale(1.5,1.5);
+}
+
+
+
+
+.holder{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button{
+  width: 80px;
+    height: 40px;
+    background: gray;
+    border-radius: 30px;
+    padding: 5px;
+    transition: all 100ms ease-in-out;
+}
+
+.button > .innerButton{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 100ms ease-in-out;
+}
+.button.active{
+    background: dodgerblue;
+}
+.button.active > .innerButton{
+    margin-left: 40px;
+}
